@@ -397,7 +397,7 @@ vendors:
     line_number:
   # Lazyload
   # https://github.com/verlok/lazyload
-  # Version: 8.9.0
+  # Version: 16.1.0
   lazyload:
   # Busuanzi
   # https://busuanzi.ibruce.info
