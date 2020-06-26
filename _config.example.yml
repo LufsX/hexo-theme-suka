@@ -282,7 +282,7 @@ valine_counter:
 # The counter by https://github.com/spencerwooo/ga-hit-count-serverless
 ga_hit_count:
   enable: false
-  post_views_api: # https://github.com/spencerwooo/ga-hit-count-serverless
+  post_views_api: #  Example: https://domain.com/api/ga
   before: # html tag support
   after: Views # html tag support
 
@@ -426,7 +426,7 @@ vendors:
 fragment_cache: false
 # Theme Version
 #   localStorage cache version
-verison: 1.3.3
+verison: 1.4.1
 old_verison:
   - 0.2.0
   - 0.0.1
@@ -438,3 +438,4 @@ old_verison:
   - 1.2.0
   - 1.3.0
   - 1.3.2
+  - 1.3.3
