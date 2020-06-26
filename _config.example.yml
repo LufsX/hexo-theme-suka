@@ -279,6 +279,13 @@ valine_counter:
     before: # html tag supported
     after: # html tag supported
 
+# The counter by https://github.com/spencerwooo/ga-hit-count-serverless
+ga_hit_count:
+  enable: false
+  post_views_api: # https://github.com/spencerwooo/ga-hit-count-serverless
+  before: # html tag support
+  after: Views # html tag support
+
 # ---------------------------------------------------------------
 # Plugin Settings
 # ---------------------------------------------------------------
@@ -414,6 +421,7 @@ vendors:
   # You can fill in any prettify theme you want here, and it will override the prettify theme config before.
   # Personally I prefer the theme here: https://github.com/jmblog/color-themes-for-google-code-prettify
   prettify_theme:
+  ga_hit_count:
 
 fragment_cache: false
 # Theme Version

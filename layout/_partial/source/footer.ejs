@@ -50,6 +50,9 @@ window.lazyLoadOptions = {
     /* Busuanzi */
     if (theme.busuanzi.enable) html += partial('_plugin/busuanzi/import_js');
 
+    /* GA Hit Count */
+    if (theme.ga_hit_count.enable) html += partial('_plugin/hit-count/import_js');
+
     /* theme.hanabi.enable */
     if (theme.hanabi.enable) html += partial('_plugin/highlight/hanabi/import_js');
 

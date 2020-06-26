@@ -21,6 +21,9 @@
         <% if ( (theme.busuanzi.enable) && (theme.busuanzi.post_pv.enable) ) { %>
             <%- partial('_plugin/busuanzi/post-counter', {}, {cache: theme.fragment_cache}) %>
         <% } %>
+        <% if ( (theme.ga_hit_count.enable) ) { %>
+            <%- partial('_plugin/hit-count/post-counter', {}, {cache: theme.fragment_cache}) %>
+        <% } %>
         <% if ( (theme.valine_counter.enable) && (theme.valine_counter.post_pv.enable) ) { %>
             <%- partial('_plugin/valine-counter/post', {}, {cache: theme.fragment_cache}) %>
         <% } %>
