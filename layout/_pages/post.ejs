@@ -1,7 +1,7 @@
 <div class="post-container">
     <div id="post-card" class="card">
         <% if (page.thumbnail) { %>
-            <div class="card-image lazyload" data-bg="url('<%= page.thumbnail %>')"></div>
+            <div class="card-image lazy" crossorigin data-bg="<%= page.thumbnail %>"></div>
         <% } %>
         <div class="card-item-container">
             <div class="card-inner-cell">

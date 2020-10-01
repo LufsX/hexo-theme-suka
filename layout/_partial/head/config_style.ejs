@@ -21,20 +21,21 @@
     }
 
     <% if (theme.uiux.lazy_padding_bottom) { %>
-    #post-content img.lazyload {
+    #post-content img.lazy {
         transition: filter .35s ease 0s;
     }
 
-    #post-content img.lazyload:not(.loaded) {
+    #post-content img.lazy:not(.loaded) {
+        visibility: hidden;
         -webkit-filter: blur(5px);
         filter: blur(5px);
     }
 
-    #post-content img.lazyload:not(.loaded):not(.loading) {
+    #post-content img.lazy:not(.loaded):not(.loading) {
         padding-bottom: <%= theme.uiux.lazy_padding_bottom %>;
     }
 
-    #post-content img.lazyload.error {
+    #post-content img.lazy.error {
         display: none
     }
     <% } %>
