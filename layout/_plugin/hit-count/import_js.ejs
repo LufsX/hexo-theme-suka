@@ -1,0 +1,9 @@
+<script>
+  window.post_views_api = "<%= theme.ga_hit_count.post_views_api %>";
+</script>
+
+<% if (theme.vendors.ga_hit_count) { %>
+<script src="<%= theme.vendors.ga_hit_count %>"></script>
+<% } else { %>
+<script src="/js/ga-views.js"></script>
+<% } %>
