@@ -220,6 +220,7 @@ comment:
 # Suka theme has a built in Baidu's, Google's website analytics and CNZZ's analytics service
 analytics:
   google_site_id:
+  cloudflare_token:
   # https://github.com/SukkaW/cloudflare-workers-async-google-analytics
   cloudflare_async_google_analytics:
     google_site_id:
