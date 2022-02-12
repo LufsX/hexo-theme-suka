@@ -7,7 +7,7 @@ hexo.extend.filter.register('after_post_render', (data) => {
         return;
     }
 
-    const loadingImage = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==';
+    const loadingImage = 'https://cdn.isteed.cc/img/svg/loading.svg';
 
     data.content = data.content.replace(/<img(.*?)src="(.*?)"(.*?)>/gi, (str, p1, p2) => {
         if (/data-srcset/gi.test(str)) {
