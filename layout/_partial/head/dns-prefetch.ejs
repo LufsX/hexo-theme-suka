@@ -38,6 +38,9 @@
 <% if (theme.analytics.clarity) { %>
     <link rel="dns-prefetch" href="//www.clarity.ms">
 <% } %>
+<% if (theme.analytics.cloudflare_async_google_analytics) { %>
+    <link rel="dns-prefetch" href="//<%= theme.analytics.cloudflare_async_google_analytics.cfga_api %>">
+<% } %>
 <% if (theme.analytics.gtags_site_id) { %>
     <link rel="dns-prefetch" href="//www.googletagmanager.com">
     <link rel="dns-prefetch" href="//www.google-analytics.com">
